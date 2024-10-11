@@ -1,0 +1,16 @@
+version: '3.0'
+
+services:
+  flask-app:
+    image: flask-app:latest
+    container_name: flask-app
+    ports:
+      - "5000:5000"
+
+  react-app:
+    image: react-app:latest
+    container_name: react-app
+    ports:
+      - "3000:80"
+    depends_on:
+      - flask-app
