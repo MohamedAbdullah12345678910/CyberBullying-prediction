@@ -12,8 +12,8 @@ const Home = () => {
         }
 
         try {
-            const apiUrl = process.env.BACKEND_API_URL || 'http://localhost:5000/predict';
-            const response = await fetch(`${apiUrl}`, {
+            const apiUrl = process.env.REACT_APP_BACKEND_API_URL || 'https://abdullah-2003-v1.onrender.com/predict';
+            const response = await fetch(apiUrl, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -28,7 +28,7 @@ const Home = () => {
                 setPrediction("Error: Unable to get prediction");
             }
         } catch (error) {
-            setPrediction("Backend is currently down. Sorry for Inconvenience. Please try again later.");
+            setPrediction("Backend is currently down. Sorry for the inconvenience. Please try again later.");
         }
     };
 
@@ -40,14 +40,18 @@ const Home = () => {
                     <p>The "Cyberbullying Tweet Detection" project looks into the world of machine learning to tackle the essential problem of cyberbullying detection in online communication. This project focuses on the creation and implementation of cutting-edge machine learning models to automatically recognize and categorize tweet content containing cyberbullying.</p>
                 </div>
                 <div className="image">
-                    <img src="./images/cyberbullying.png" alt="Cyberbullying"/>
+                    <img src="./images/cyberbullying.png" alt="Cyberbullying" />
                 </div>
             </div>
             <div className="row">
                 <div className="prediction-section">
                     <h2>Try the Cyberbullying detection model</h2>
-                    <textarea className="input-textarea" placeholder="Enter text here..." value={text}
-                        onChange={(e) => setText(e.target.value)}></textarea>
+                    <textarea
+                        className="input-textarea"
+                        placeholder="Enter text here..."
+                        value={text}
+                        onChange={(e) => setText(e.target.value)}
+                    ></textarea>
                     <button className="predict-button" onClick={handlePredict}>Predict</button>
                     <p className="prediction-result">{prediction}</p>
                 </div>
