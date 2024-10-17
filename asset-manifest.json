@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.43d830ac.css",
-    "main.js": "/static/js/main.61eae35f.js",
-    "static/js/453.8ab44547.chunk.js": "/static/js/453.8ab44547.chunk.js",
-    "index.html": "/index.html",
-    "main.43d830ac.css.map": "/static/css/main.43d830ac.css.map",
-    "main.61eae35f.js.map": "/static/js/main.61eae35f.js.map",
-    "453.8ab44547.chunk.js.map": "/static/js/453.8ab44547.chunk.js.map"
+    "main.css": "/CyberBullying-prediction/static/css/main.43d830ac.css",
+    "main.js": "/CyberBullying-prediction/static/js/main.d7204efb.js",
+    "static/js/453.8ab44547.chunk.js": "/CyberBullying-prediction/static/js/453.8ab44547.chunk.js",
+    "index.html": "/CyberBullying-prediction/index.html",
+    "main.43d830ac.css.map": "/CyberBullying-prediction/static/css/main.43d830ac.css.map",
+    "main.d7204efb.js.map": "/CyberBullying-prediction/static/js/main.d7204efb.js.map",
+    "453.8ab44547.chunk.js.map": "/CyberBullying-prediction/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.43d830ac.css",
-    "static/js/main.61eae35f.js"
+    "static/js/main.d7204efb.js"
   ]
 }
