@@ -12,7 +12,7 @@ const Home = () => {
         }
 
         try {
-            const apiUrl = process.env.REACT_APP_BACKEND_API_URL || 'https://abdullah-2003-v1.onrender.com/predict';
+            const apiUrl =  'https://abdullah-2003-v1.onrender.com/predict';
             const response = await fetch(apiUrl, {
                 method: 'POST',
                 headers: {
